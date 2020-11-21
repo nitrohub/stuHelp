@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- onload="myFunction()" -->
+    <body>
+        <!-- <%- include('../include/navigation.ejs') %> -->
+
+            <div class="donSect">
+                <div class="donDiv">
+                    <section class="donationSect">
+                        <!-- <% if (DonMsg) { %>
+                            <div class="">
+                                <div id="donationSnack">
+                                    <%= DonMsg %>
+                                </div>
+                            </div>
+                            <% } %> -->
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 donatePara">
+                                        <div class="mainDon">
+                                            <center>
+                                                <h2 class="font-weight-medium">
+                                                    Help Our Community Flourish!
+                                                </h2>
+                                                <div class="donateText">
+                                                    <p>
+                                                        A small help will take us long way.Your little help will empower our developers to produce innovative products for a cause. Help and motivate developers to grow and nourish to build a better tomorrow, Come join us lets make tomorrow better!
+                                                    </p>
+                                                </div>
+                                            </center>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row donForm">
+                                            <div class="donateCard" data-aos="zoom-in-up">
+                                                <form action="/donate" method="POST" class="Dform">
+                                                    <center>
+                                                        <button type="button" id="h" class="donateBtn">
+                        <i class="fa fa-rupee"></i> 100
+                      </button>
+                                                        <button type="button" id="fh" class="donateBtn">
+                        <i class="fa fa-rupee"></i> 500
+                      </button>
+                                                        <button type="button" id="ot" class="donateBtn">
+                        <i class="fa fa-rupee"></i> 1000
+                      </button>
+                                                    </center>
+                                                    <div class="row inputRow">
+                                                        <input id="am" type="number" name="amount" placeholder="Enter the Amount" max="50000" required class="donateInp" />
+                                                    </div>
+                                                    <div class="row inputRow">
+                                                        <input type="text" name="name" placeholder="Enter your Name" required class="donateInp" />
+                                                    </div>
+                                                    <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
+                                                    <div class="row inputRow">
+                                                        <button class="btn btn-success form-control" id="donBtn">
+                        Donate
+                      </button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    </section>
+                </div>
+            </div>
+            <script src="js/donate.js"></script>
+            <!-- <script>
+                function myFunction() {
+                    var x = document.getElementById("donationSnack");
+                    x.className = "show";
+                    setTimeout(function() {
+                        x.className = x.className.replace("show", "");
+                    }, 3000);
+                }
+            </script> -->
+            <!-- <%- include('../include/footer.ejs') %> -->
+    </body>
+
+</html>
