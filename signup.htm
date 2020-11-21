@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html class="no-js">
+<!-- <%- include('../include/head.ejs') %> -->
+    
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+    <body class="bod">
+        <!-- onload="myFunction()" -->
+        <!-- <%- include('../include/navigation.ejs') %> -->
+            <div class="row">
+                <div class="col-md-3"></div>
+
+                <div class="col-md-6">
+                    <!-- <% if (errorMessage) { %>
+                        <div class="">
+                            <div id="snackbar">
+                                <%= errorMessage %>
+                            </div>
+                        </div>
+                        <% } %> -->
+                            <div class="wrap">
+                                <form method="POST" action="/register">
+                                    <div class="text-center">
+                                        <h3>Sign Up</h3>
+                                    </div>
+                                    <div>
+                                        <!-- <input class="<%= validationErrors.find(e => e.param === 'fname') ? 'invalid' : '' %> AuthInp" type="text" placeholder="First Name" name="fname" value="<%= oldInput.fname %>" /> -->
+                                        <input class="AuthInp" type="text" placeholder="First Name" name="fname" required/>
+                                    </div>
+                                    <div>
+                                        <!-- <input class="AuthInp <%= validationErrors.find(e => e.param === 'lname') ? 'invalid' : '' %>" type="text" placeholder="Last Name" name="lname" value="<%= oldInput.lname %>" /> -->
+                                        <input type="text" class="AuthInp" placeholder="Last Name" name="lname" required/>
+                                        <!-- <input type="hidden" name="_csrf" value="<%= csrfToken %>" /> -->
+                                    </div>
+                                    <div>
+                                        <!-- <input class="AuthInp <%= validationErrors.find(e => e.param === 'emailId') ? 'invalid' : '' %>" type="text" placeholder="Email" name="emailId" value="<%= oldInput.email %>" /> -->
+                                        <input type="email" class="AuthInp" placeholder="Email" name="emailId" required/>
+                                    </div>
+                                    <div>
+                                        <!-- <input class="AuthInp passwordA <%= validationErrors.find(e => e.param === 'password') ? 'invalid' : '' %>" type="password" placeholder="Password" name="password" value="<%= oldInput.password %>" /> -->
+                                        <!-- Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character: -->
+                                        <input required type="password" placeholder="Password" class="AuthInp passwordA" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"/>
+                                    </div>
+                                    <div>
+                                        <!-- <input class="AuthInp passwordA <%= validationErrors.find(e => e.param === 'confirmPassword') ? 'invalid' : '' %>" type="password" placeholder="Confirm Password" name="confirmPassword" /> -->
+                                        <!-- <input required type="password" placeholder="confirm Password" class="AuthInp passwordA" name="confirm password"> -->
+                                        <i class="far fa-eye" id="togglePassword"></i>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="tac" required /> accept terms and conditions
+                                    </div>
+                                    <div>
+                                        <button class="subBtn">SIGN UP</button>
+                                    </div>
+                                    <div class="AuthLink">
+                                        <a href="/login">Sign In</a>
+                                    </div>
+                                </form>
+                            </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+
+            <!-- <script>
+                function myFunction() {
+                    var x = document.getElementById("snackbar");
+                    x.className = "show";
+                    setTimeout(function() {
+                        x.className = x.className.replace("show", "");
+                    }, 3000);
+                }
+            </script> -->
+            <script src="js/admin/register.js"></script>
+
+            <section>
+                <!-- <%- include('../include/footer.ejs') %> -->
+            </section>
+    </body>
+
+</html>
