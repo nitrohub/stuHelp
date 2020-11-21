@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html class="no-js">
+<!-- <%- include('../include/head.ejs') %> -->
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+    <body class="bod" >
+        <!-- onload="myFunction()" -->
+        <!-- <%- include('../include/navigation.ejs') %> -->
+            <div class="row">
+                <div class="col-md-3"></div>
+
+                <div class="col-md-6">
+                    <!-- <% if (errorMessage) { %>
+                        <div class="user-message--error">
+                            <div id="snackbar">
+                                <%= errorMessage %>
+                            </div>
+                        </div>
+                        <% } %> -->
+                            <div class="wrap1">
+                                <form action="/login" method="POST">
+                                    <div class="text-center">
+                                        <h3>Login</h3>
+                                    </div>
+                                    <div>
+                                        <!-- <input class="AuthInp <%= validationErrors.find(e => e.param === 'emailId') ? 'invalid' : '' %>" type="text" placeholder="Email Id" name="emailId" value="<%= oldInput.email %>" /> -->
+                                        <input class="AuthInp" type="text" placeholder="username" name="emailId"/>
+                                    </div>
+                                    <div>
+                                        <!-- <input class="AuthInp passwordA <%= validationErrors.find(e => e.param === 'password') ? 'invalid' : '' %>" type="password" placeholder="password" name="password" value="<%= oldInput.password %>" /> -->
+
+                                        <input type="password" class="AuthInp passwordA" placeholder="password" name="password"/>
+                                        <i class="far fa-eye" id="togglePassword"></i>
+                                        <!-- <input type="hidden" name="_csrf" value="<%= csrfToken %>" /> -->
+                                    </div>
+                                    <div>
+                                        <button class="subBtn">SIGN IN</button>
+                                    </div>
+
+                                    <div class="AuthLink">
+                                        <a href="/register">Sign Up</a>
+                                    </div>
+                                    <div class="AuthLink">
+                                        <a href="/reset">Forgot Password?</a>
+                                    </div>
+                                </form>
+                            </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+
+            <!-- <script>
+                function myFunction() {
+                    var x = document.getElementById("snackbar");
+                    x.className = "show";
+                    setTimeout(function() {
+                        x.className = x.className.replace("show", "");
+                    }, 3000);
+                }
+            </script> -->
+
+            <section>
+                <!-- <%- include('../include/footer.ejs') %> -->
+            </section>
+    </body>
+
+</html>
