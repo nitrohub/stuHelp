@@ -2,7 +2,13 @@
 <html>
     <head>
 
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+        </style>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
         <style>
+          
             .butn{
                 justify-content: center;
                 align-items: center;
@@ -11,21 +17,37 @@
 
             .price{
                 text-align: right;
+                margin-right: 10px;
             }
 
             .card{
+                font-family: 'Fira Sans', sans-serif;
                 width :80%;
-                height: 300px;
-                background:rgb(235, 230, 230);
+                height: 335px;
+                /* background:rgb(235, 230, 230); */
                 margin:auto;
                 margin-bottom: 40px;
+                box-shadow: darkgrey 2px 2px 5px;
             }
+
+            .card:hover{
+              box-shadow: rgb(100, 99, 99) 10px 10px 10px 5px;
+            }
+
 
             .cardImg{
                 width:100%;
                 height:50%;
             }
 
+            .filter{
+              margin-bottom: 20px;
+              justify-content: center;
+              align-items: center;
+              display:flex;
+            }
+
+          
         </style>
 
 
@@ -69,7 +91,7 @@
                       <li><a href="#">Doubts</a></li>
                     </ul>
                   </li>
-                  <li><a href="#">Donation</a></li>
+                  <li><a href="Donate.htm">Donation</a></li>
                   <li><a href="#">Login</a></li>
                   <li><a href="#">Signup</a></li>
                 </ul>
@@ -77,15 +99,37 @@
             </div><!-- /.container-fluid -->
           </nav>
           <div class="container">
-            <div class="jumbotron">
+            <div class="well well-sm">
                 <div class="h1" style="text-align: center;">Notes</div>
             </div>
+            <div class="row ">
+              <div class="col-sm-6 col-xs-12 col-lg-6">
+                <div class="filter">
+                  <!-- <div class="form-group"> -->
+                    <input type="text" placeholder="Subject" list="sub" name="subject" class="form-control"/>
+                  <!-- </div> -->
+                  <datalist id="sub">
+                    <option>Hindi</option>
+                    <option>Marathi</option>
+                    <option>Science</option>
+                    <option>History</option>
+                    <option>Geography</option>
+                    <option>Maths</option>
+                  </datalist>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xs-12 col-lg-6">
+                <div class="filter">
+                    <input type="number" name="standard" placeholder="Class" min="8" max="10" class="form-control"/>
+                </div>
+              </div>
+            </div>
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 "><div class="card"><img src="https://images.unsplash.com/photo-1605940169841-60884072a854?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" width="100%" height="70%"/><div class="butn h4">Marathi-Essay</div><div class="price">-<i>500</i></div></div></div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 "><div class="card"><img src="https://images.unsplash.com/photo-1605940169841-60884072a854?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" width="100%" height="70%"/><div class="butn h4">Marathi-Essay</div><div class="price">-<i>500</i></div></div></div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 "><div class="card"><img src="https://images.unsplash.com/photo-1605940169841-60884072a854?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" width="100%" height="70%"/><div class="butn h4">Marathi-Essay</div><div class="price">-<i>500</i></div></div></div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 "><div class="card"><img src="https://images.unsplash.com/photo-1605940169841-60884072a854?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" width="100%" height="70%"/><div class="butn h4">Marathi-Essay</div><div class="price">-<i>500</i></div></div></div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 "><div class="card"><img src="https://images.unsplash.com/photo-1605940169841-60884072a854?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" width="100%" height="70%"/><div class="butn h4">Marathi-Essay</div><div class="price">-<i>500</i></div></div></div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 "><div class="card"><img src="https://images.unsplash.com/photo-1605940169841-60884072a854?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" width="100%" height="70%"/><div class="butn h4">Marathi-Essay</div><div class="price"><i class="fa fa-inr" aria-hidden="true"></i><i>500</i><div class="butn"><input type="submit" value="more info" class="btn-primary"></div></div></div></div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 "><div class="card"><img src="https://images.unsplash.com/photo-1605940169841-60884072a854?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" width="100%" height="70%"/><div class="butn h4">Marathi-Essay</div><div class="price"><i class="fa fa-inr" aria-hidden="true"></i><i>500</i><div class="butn"><input type="submit" value="more info" class="btn-primary"></div></div></div></div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 "><div class="card"><img src="https://images.unsplash.com/photo-1605940169841-60884072a854?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" width="100%" height="70%"/><div class="butn h4">Marathi-Essay</div><div class="price"><i class="fa fa-inr" aria-hidden="true"></i><i>500</i><div class="butn"><input type="submit" value="more info" class="btn-primary"></div></div></div></div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 "><div class="card"><img src="https://images.unsplash.com/photo-1605940169841-60884072a854?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" width="100%" height="70%"/><div class="butn h4">Marathi-Essay</div><div class="price"><i class="fa fa-inr" aria-hidden="true"></i><i>500</i><div class="butn"><input type="submit" value="more info" class="btn-primary"></div></div></div></div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 "><div class="card"><img src="https://images.unsplash.com/photo-1605940169841-60884072a854?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" width="100%" height="70%"/><div class="butn h4">Marathi-Essay</div><div class="price"><i class="fa fa-inr" aria-hidden="true"></i><i>500</i><div class="butn"><input type="submit" value="more info" class="btn-primary"></div></div></div></div>
             </div>
           </div>
     </body>
