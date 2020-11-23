@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href="css/corousal.css" rel="stylesheet">
+  
     <style>
         .stick{
             justify-content: center;
@@ -24,7 +26,11 @@
         .sect2{
             height:100vh;
             width :98.75vw;
-            background : url("");
+            background : url("img/courses.png");
+            background-repeat:no-repeat;
+            background-size: cover;
+            margin-top:30px;
+            color:white;
         }
         #n{
           margin-bottom: 0%;
@@ -104,7 +110,7 @@
       <section>
         <div class="container">
           <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 h2" style="margin-bottom: 50px; text-align: center;"><b>What we offer?</b></div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 h1" style="margin-bottom: 50px; text-align: center;"><b>What we offer?</b></div>
           </div>
           <div class="row" style="margin-bottom: 70px;">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" >
@@ -140,15 +146,84 @@
         </div>
       </section>
       <section class="sect2">
-        <div class="container">
-          <div class="row">
-            <!-- <div class="col-lg-12">Corousel Effect</div> -->
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 50px; text-align: center;">
-              <h1>Our Courses</h1>
+        <div id="corousel">
+          <div class="container">
+            <div class="row" style="justify-content: center; align-items: center; display: flex;" >
+              <h1> Our Courses</h1>
             </div>
-        </div>
-        </div>
+            <div class="content-wrapper">
+              <div class="columns is-mobile is-vcentered cards-row">
+                <div class="column is-1 middle">
+                  <button id="left" class="invisible" style="margin-bottom:10px;"><img src="img/leftArrow.svg" height="40px" width="40px"></button>
+                </div>
+                <div class="column is-10 sliding-area">
+                  <div class="card-scroll">
+                    <div class="scroll-cards">
+                      <div class="column is-6 info-card">
+                        <div class="superhero-card">
+                          <img class="img-box" src="https://www.professionalcontentcreation.com/wp-content/uploads/2019/07/Online-courses-for-writers.jpg" alt="">
+                        </div>
+                      </div>
+                      <div class="column is-6 info-card">
+                        <div class="superhero-card">
+                          <div class="superhero-card">
+                                                  <img class="img-box" src="https://www.professionalcontentcreation.com/wp-content/uploads/2019/07/Online-courses-for-writers.jpg" alt="">
+                                              </div>
+                        </div>
+                      </div>
+                      <div class="column is-6 info-card">
+                        <div class="superhero-card">
+                                              <div class="superhero-card">
+                                                  <img class="img-box" src="https://www.professionalcontentcreation.com/wp-content/uploads/2019/07/Online-courses-for-writers.jpg" alt="">
+                                              </div>
+                        </div>
+                      </div>
+                      <div class="column is-6 info-card">
+                        <div class="superhero-card">
+                          <div class="superhero-card">
+                                                  <img class="img-box" src="https://www.professionalcontentcreation.com/wp-content/uploads/2019/07/Online-courses-for-writers.jpg" alt="">
+                                              </div>
+                        </div>
+                                      </div>
+                                      <div class="column is-6 info-card">
+                        <div class="superhero-card">
+                          <img class="img-box" src="https://www.professionalcontentcreation.com/wp-content/uploads/2019/07/Online-courses-for-writers.jpg" alt="">
+                        </div>
+                      </div>
+                      <div class="column is-6 info-card">
+                        <div class="superhero-card">
+                          <div class="superhero-card">
+                                                  <img class="img-box" src="https://www.professionalcontentcreation.com/wp-content/uploads/2019/07/Online-courses-for-writers.jpg" alt="">
+                                              </div>
+                        </div>
+                      </div>
+                      <div class="column is-6 info-card">
+                        <div class="superhero-card">
+                                              <div class="superhero-card">
+                                                  <img class="img-box" src="https://www.professionalcontentcreation.com/wp-content/uploads/2019/07/Online-courses-for-writers.jpg" alt="">
+                                              </div>
+                        </div>
+                      </div>
+                      <div class="column is-6 info-card">
+                        <div class="superhero-card">
+                          <div class="superhero-card">
+                                                  <img class="img-box" src="https://www.professionalcontentcreation.com/wp-content/uploads/2019/07/Online-courses-for-writers.jpg" alt="">
+                                              </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+                <div class="column is-1 middle">
+                  <button id="right" style="margin-top:10px;"><img src="img/ri.svg" height="40px" width="40px"></button>
+                </div>	
+              </div>
+            </div>
+          </div>
+          </div>
       </section>
-      
+      <script src="js/corousal.js"></script>
 </body>
 </html>

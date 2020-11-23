@@ -1,0 +1,105 @@
+#corousel {
+    background-color: #a629cf;
+    /* display: flex; */
+    height: 70vh;
+    width: 98.75vw;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+/* .section
+{
+    padding: 3rem 1.5rem;
+} */
+
+.img-box
+{
+    border-radius: 6px;
+    max-height: 250px;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.middle
+{
+    text-align: center;
+}
+
+
+#corousel .container {
+	max-width: none;
+	padding-left: 4%;
+	padding-right: 4%;
+}
+
+.cards-row .column.is-6 {
+	max-height: 250px;
+	position: relative;
+	padding: 0;
+	margin: 2rem 1.5%;
+}
+
+.superhero-card
+{
+    height: 100%;
+}
+
+@media screen and (min-width: 769px) {
+	.cards-row .column.is-6 {
+		width: 47%;
+	}
+}
+
+.card-scroll {
+	max-width: 1224px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.sliding-area {
+	width: 100%;
+}
+
+.scroll-cards {
+	display: flex;
+	transition: all 0.5s ease-in-out;
+}
+
+.invisible {
+	opacity: 0.4;
+	transition: all 0.25s ease-in-out;
+}
+
+#left, #right {
+	transition: all 0.25s ease-in-out;
+	background: transparent;
+	border: 0;
+    outline: none;
+    padding: 0;
+}
+
+@media screen and (max-width: 550px) {
+	#corousel {
+		padding: 3rem 0.5rem;
+    }
+    
+    .column
+    {
+        padding: 0;
+    }
+
+    .fa-5x {
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+	.column.is-6, .column.is-6-tablet {
+		-webkit-box-flex: 0;
+		-ms-flex: none;
+		flex: none;
+		width: 90%;
+		margin: 0 5% !important;
+    }
+    
+}
