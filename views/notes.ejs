@@ -1,6 +1,8 @@
+<!-- 1idZ_H0OcWVPSthTDdybkUFMlczKLZJyY -->
 <!DOCTYPE html>
 <html>
     <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
@@ -126,7 +128,7 @@
             </div>
             <div class="row">
               <% notes.forEach(note=>{ %>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 "><div class="card"><img src="<%=note.imageUrl%>" width="100%" height="70%"/><div class="butn h4"><%=note.title%></div><div class="price"><i class="fa fa-inr" aria-hidden="true"></i><i><%=note.amount%></i><div class="butn"><input type="submit" value="more info" class="btn-primary"></div></div></div></div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 "><div class="card"><img src="<%=note.imageUrl%>" width="100%" height="70%"/><div class="butn h4"><%=note.title%></div><div class="price"><i class="fa fa-inr" aria-hidden="true"></i><i><%=note.amount%></i><div class="butn"><a href="/notes/<%=note._id%>" class="btn btn-info">More Info</a></div></div></div></div>
               <% })%>
             </div>
           </div>

@@ -1,8 +1,8 @@
 //Only admins can enter the notes
 //basic page setup => Done
 //signup and login feature => Done
-//Enter the notes details from the admin side
-//Show case Notes on the Client side
+//Enter the notes details from the admin side => Done
+//Show case Notes on the Client side => Done
 //Filter notes based on the subject name and the class
 //Pay for the notes and make the google drive link accessible to the user
 //Make an entry in the users purchased notes Array=>[]
