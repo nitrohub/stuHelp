@@ -1,13 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href="css/corousal.css" rel="stylesheet">
+  
     <style>
-        .about{
-            height:1vh;
-            width :1vw;
-            background : url("");
+
+      a{
+        color:#FFF;
+      }
+
+      .testImg{
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        margin-top: 50px;
+        margin-left: 80px;
+      }
+
+    #testimonial{
+      height:100vh;
+      width :98.75vw;
+    }
+
+    #foot{
+      height:80vh;
+      width :98.75vw;
+      background:#a629cf;
+      color:#FFF;
+    }
+
+    .icon-bar{
+      background: #ffffff;
+}
+        .stick{
+            justify-content: center;
+            display: flex;
+            align-items: center;
         }
+
+        *{
+          font-family: 'Nerko One', cursive;
+                  }
+
+        .about{
+            height:100vh;
+            width :98.75vw;
+            background : url("img/Website.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 0%;
+        }
+
+        .sect2{
+            height:100vh;
+            width :98.75vw;
+            background : url("img/courses.png");
+            background-repeat:no-repeat;
+            background-size: cover;
+            margin-top:30px;
+            color:white;
+        }
+        #n{
+          margin-bottom: 0%;
+        }
+
+        nav{
+          background-color:#a629cf;
+        }
+
+        nav a{
+          color:white;
+        }
+
     </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css"> -->
     <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
@@ -22,7 +89,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar navbar-default navbar-static-top navbar-inverse">
+    <nav class="navbar navbar-static-top" id="n">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -57,13 +124,230 @@
         </div><!-- /.container-fluid -->
       </nav>
       <section class="about">
-
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 stick" >
+              <img src="img/9.png" width="300px" height="300px" style="margin-top:100px" >
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 landHead" style="margin-top:140px; color:white">
+              <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptas tenetur autem omnis repellat aspernatur aperiam quibusdam sit aliquid, eum odit natus quo quisquam rerum nemo? Totam ab dignissimos expedita?</h3>
+            </div>
+          </div>
+        </div>
       </section>
       <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 h1" style="margin-bottom: 50px; text-align: center;"><b>What we offer?</b></div>
+          </div>
+          <div class="row" style="margin-bottom: 70px;">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" >
+              <img src="img/helping2.png" style="max-width: 300px;max-height: 300px;">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"><h3>Hand holding guidance to students in need!</h3>
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, molestias! Suscipit, placeat! Autem culpa quam, cum exercitationem ab odit assumenda architecto quod quo quas nam nobis illum error sapiente maxime.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"><h3>Important notes!</h3>
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, molestias! Suscipit, placeat! Autem culpa quam, cum exercitationem ab odit assumenda architecto quod quo quas nam nobis illum error sapiente maxime.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="justify-content: center; align-items: center; display:flex;">
+              <img src="img/3.png" style="max-width: 300px;max-height: 300px;"> 
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </section>
+      <section class="sect2">
+        <div id="corousel">
+          <div class="container">
+            <div class="row" style="justify-content: center; align-items: center; display: flex;" >
+              <h1> Our Courses</h1>
+            </div>
+            <div class="content-wrapper">
+              <div class="columns is-mobile is-vcentered cards-row">
+                <div class="column is-1 middle">
+                  <button id="left" class="invisible" style="margin-bottom:10px;"><img src="img/leftArrow.svg" height="40px" width="40px"></button>
+                </div>
+                <div class="column is-10 sliding-area">
+                  <div class="card-scroll">
+                    <div class="scroll-cards">
+                      <div class="column is-6 info-card">
+                        <div class="superhero-card">
+                          <img class="img-box" src="https://www.professionalcontentcreation.com/wp-content/uploads/2019/07/Online-courses-for-writers.jpg" alt="">
+                        </div>
+                      </div>
+                      <div class="column is-6 info-card">
+                        <div class="superhero-card">
+                          <div class="superhero-card">
+                                                  <img class="img-box" src="https://www.professionalcontentcreation.com/wp-content/uploads/2019/07/Online-courses-for-writers.jpg" alt="">
+                                              </div>
+                        </div>
+                      </div>
+                      <div class="column is-6 info-card">
+                        <div class="superhero-card">
+                                              <div class="superhero-card">
+                                                  <img class="img-box" src="https://www.professionalcontentcreation.com/wp-content/uploads/2019/07/Online-courses-for-writers.jpg" alt="">
+                                              </div>
+                        </div>
+                      </div>
+                      <div class="column is-6 info-card">
+                        <div class="superhero-card">
+                          <div class="superhero-card">
+                                                  <img class="img-box" src="https://www.professionalcontentcreation.com/wp-content/uploads/2019/07/Online-courses-for-writers.jpg" alt="">
+                                              </div>
+                        </div>
+                                      </div>
+                                      <div class="column is-6 info-card">
+                        <div class="superhero-card">
+                          <img class="img-box" src="https://www.professionalcontentcreation.com/wp-content/uploads/2019/07/Online-courses-for-writers.jpg" alt="">
+                        </div>
+                      </div>
+                      <div class="column is-6 info-card">
+                        <div class="superhero-card">
+                          <div class="superhero-card">
+                                                  <img class="img-box" src="https://www.professionalcontentcreation.com/wp-content/uploads/2019/07/Online-courses-for-writers.jpg" alt="">
+                                              </div>
+                        </div>
+                      </div>
+                      <div class="column is-6 info-card">
+                        <div class="superhero-card">
+                                              <div class="superhero-card">
+                                                  <img class="img-box" src="https://www.professionalcontentcreation.com/wp-content/uploads/2019/07/Online-courses-for-writers.jpg" alt="">
+                                              </div>
+                        </div>
+                      </div>
+                      <div class="column is-6 info-card">
+                        <div class="superhero-card">
+                          <div class="superhero-card">
+                                                  <img class="img-box" src="https://www.professionalcontentcreation.com/wp-content/uploads/2019/07/Online-courses-for-writers.jpg" alt="">
+                                              </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+                <div class="column is-1 middle">
+                  <button id="right" style="margin-top:10px;"><img src="img/ri.svg" height="40px" width="40px"></button>
+                </div>	
+              </div>
+            </div>
+          </div>
+          </div>
+      </section>
+      <section id="testimonial">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="align-items: center; display:flex; justify-content:center;">
+              <h1> Our Students</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <img class="testImg" src="https://www.ldatschool.ca/wp-content/uploads/2014/02/A-teachers-journey-with-student-self-advocacy.jpg" alt="student">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 h4" style="margin-top: 50px;">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam quas aspernatur dolore voluptate officiis fugit a? Consequatur voluptas voluptates, odio est temporibus natus eos? Inventore dolor minus molestias deserunt adipisci!              
+              <div>
+                <p style="text-align:right;">-<i>Author</i></p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 h4" style="margin-top: 50px;">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam quas aspernatur dolore voluptate officiis fugit a? Consequatur voluptas voluptates, odio est temporibus natus eos? Inventore dolor minus molestias deserunt adipisci!              
+              <div>
+                <p style="text-align:right;">-<i>Author</i></p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <img style="margin-right:80px; float: right; border-radius:50%; width:200px; height:200px;" src="https://www.ldatschool.ca/wp-content/uploads/2014/02/A-teachers-journey-with-student-self-advocacy.jpg" alt="student">
+            </div>
+          </div>
+        </div>
 
       </section>
+<footer class="page-footer pt-4" style="background:#a629cf; color:#fff; height:50vh;">
 
-      </section>
-      
+  <div class="container-fluid text-center text-md-left">
+    <div class="row">
+      <div class="col-md-6 mt-md-0 mt-3">
+        <h3 class="text-uppercase">StuHelp</h3>
+        <p>Best platform to clarify all the doubts!</p>
+
+      </div>
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <h4 class="text-uppercase">Links</h4>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" style="color:white">Link 1</a>
+          </li>
+          <li>
+            <a href="#!" style="color:white">Link 2</a>
+          </li>
+          <li>
+            <a href="#!" style="color:white">Link 3</a>
+          </li>
+          <li>
+            <a href="#!" style="color:white">Link 4</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled" style="color:white">
+          <li>
+            <a style="color:white" href="#!">Link 1</a>
+          </li>
+          <li>
+            <a style="color:white" href="#!">Link 2</a>
+          </li>
+          <li>
+            <a style="color:white" href="#!">Link 3</a>
+          </li>
+          <li>
+            <a style="color:white" href="#!">Link 4</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+  </div>
+
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="index.htm" style="color:white"> StuHelp.com</a>
+  </div>
+
+</footer>
+
+      <script src="js/corousal.js"></script>
 </body>
 </html>
