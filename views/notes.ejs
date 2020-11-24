@@ -125,11 +125,9 @@
               </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 "><div class="card"><img src="https://images.unsplash.com/photo-1605940169841-60884072a854?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" width="100%" height="70%"/><div class="butn h4">Marathi-Essay</div><div class="price"><i class="fa fa-inr" aria-hidden="true"></i><i>500</i><div class="butn"><input type="submit" value="more info" class="btn-primary"></div></div></div></div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 "><div class="card"><img src="https://images.unsplash.com/photo-1605940169841-60884072a854?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" width="100%" height="70%"/><div class="butn h4">Marathi-Essay</div><div class="price"><i class="fa fa-inr" aria-hidden="true"></i><i>500</i><div class="butn"><input type="submit" value="more info" class="btn-primary"></div></div></div></div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 "><div class="card"><img src="https://images.unsplash.com/photo-1605940169841-60884072a854?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" width="100%" height="70%"/><div class="butn h4">Marathi-Essay</div><div class="price"><i class="fa fa-inr" aria-hidden="true"></i><i>500</i><div class="butn"><input type="submit" value="more info" class="btn-primary"></div></div></div></div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 "><div class="card"><img src="https://images.unsplash.com/photo-1605940169841-60884072a854?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" width="100%" height="70%"/><div class="butn h4">Marathi-Essay</div><div class="price"><i class="fa fa-inr" aria-hidden="true"></i><i>500</i><div class="butn"><input type="submit" value="more info" class="btn-primary"></div></div></div></div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 "><div class="card"><img src="https://images.unsplash.com/photo-1605940169841-60884072a854?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" width="100%" height="70%"/><div class="butn h4">Marathi-Essay</div><div class="price"><i class="fa fa-inr" aria-hidden="true"></i><i>500</i><div class="butn"><input type="submit" value="more info" class="btn-primary"></div></div></div></div>
+              <% notes.forEach(note=>{ %>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 "><div class="card"><img src="<%=note.imageUrl%>" width="100%" height="70%"/><div class="butn h4"><%=note.title%></div><div class="price"><i class="fa fa-inr" aria-hidden="true"></i><i><%=note.amount%></i><div class="butn"><input type="submit" value="more info" class="btn-primary"></div></div></div></div>
+              <% })%>
             </div>
           </div>
     </body>

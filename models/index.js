@@ -7,3 +7,4 @@ mongoose.connect("mongodb://localhost/stuHelp",{
 })
 
 module.exports.User = require("./user");
+module.exports.Notes = require("./notes");

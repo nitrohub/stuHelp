@@ -1,5 +1,13 @@
+//Only admins can enter the notes
 //basic page setup => Done
-//signup and login feature =>
+//signup and login feature => Done
+//Enter the notes details from the admin side
+//Show case Notes on the Client side
+//Filter notes based on the subject name and the class
+//Pay for the notes and make the google drive link accessible to the user
+//Make an entry in the users purchased notes Array=>[]
+//Make an entry in the purchased item array
+
 require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -7,6 +15,7 @@ const methodOverride = require("method-override");
 const cors = require("cors");
 const errorHandler = require("./handlers/error.js");
 const authRoutes = require("./routes/auth");
+const notesRoutes = require("./routes/notes");
 const app = express();
 
 
@@ -18,14 +27,9 @@ app.use(methodOverride('_method'));
 app.use(cors());
 
 
-// app.use((req,res,next)=>{
-//     let err = new Error("Not Found");
-//     err.status = 404;
-//     next(err);
-// })
-
 app.use(errorHandler);
 app.use(authRoutes);
+app.use(notesRoutes);
 
 app.get("/",(req,res,next)=>{
     // res.send("Get!");
