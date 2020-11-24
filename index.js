@@ -1,17 +1,34 @@
 //basic page setup => Done
 //signup and login feature =>
+require("dotenv").config();
+const express = require("express");
+const bodyParser = require("body-parser");
+const methodOverride = require("method-override");
+const cors = require("cors");
+const errorHandler = require("./handlers/error.js");
+const authRoutes = require("./routes/auth");
+const app = express();
 
-var express = require("express");
-var bodyParser = require("body-parser");
-var methodOverride = require("method-override");
-var app = express();
 
 app.set("view engine","ejs");
+
 app.use(express.static(__dirname+"/public"));
+
 app.use(methodOverride('_method'));
+app.use(cors());
+app.use(bodyParser.json());
 
+app.use("/api/auth",authRoutes);
+// app.use((req,res,next)=>{
+//     let err = new Error("Not Found");
+//     err.status = 404;
+//     next(err);
+// })
 
-app.get("/",(req,res)=>{
+app.use(errorHandler);
+
+app.get("/",(req,res,next)=>{
+    // res.send("Get!");
     res.render("index");
 });
 
