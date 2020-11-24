@@ -1,0 +1,24 @@
+{
+  "name": "stuhelp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nitrohub/stuHelp.git"
+  },
+  "author": "Nitesh Hebbare/Dhiraj Pal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nitrohub/stuHelp/issues"
+  },
+  "homepage": "https://github.com/nitrohub/stuHelp#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0"
+  }
+}
