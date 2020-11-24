@@ -11,14 +11,13 @@ const app = express();
 
 
 app.set("view engine","ejs");
-
+app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static(__dirname+"/public"));
 
 app.use(methodOverride('_method'));
 app.use(cors());
-app.use(bodyParser.json());
 
-app.use("/api/auth",authRoutes);
+
 // app.use((req,res,next)=>{
 //     let err = new Error("Not Found");
 //     err.status = 404;
@@ -26,6 +25,7 @@ app.use("/api/auth",authRoutes);
 // })
 
 app.use(errorHandler);
+app.use(authRoutes);
 
 app.get("/",(req,res,next)=>{
     // res.send("Get!");

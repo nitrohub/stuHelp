@@ -89,40 +89,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar navbar-static-top" id="n">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">StuHelp</a>
-          </div>
-      
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Home<span class="sr-only"></span></a></li>
-              <li><a href="#">Courses</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Counseling</a></li>
-                  <li><a href="notes.htm">Notes</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">Doubts</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Donation</a></li>
-              <li><a href="#">Login</a></li>
-              <li><a href="#">Signup</a></li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
+    <%- include('partials/navigation.ejs') %>
       <section class="about">
         <div class="container">
           <div class="row">
@@ -313,12 +280,9 @@
         </ul>
 
       </div>
-      <!-- Grid column -->
 
-      <!-- Grid column -->
       <div class="col-md-3 mb-md-0 mb-3">
 
-        <!-- Links -->
         <h5 class="text-uppercase">Links</h5>
 
         <ul class="list-unstyled" style="color:white">
@@ -345,13 +309,6 @@
   <div class="footer-copyright text-center py-3">© 2020 Copyright:
     <a href="index.htm" style="color:white"> StuHelp.com</a>
   </div>
-
-  <form method='POST' action="/api/auth/signup">
-    <input type="text" name="name" value="Ravikant">
-    <input type="email" name="email" value="ravikant@gmail.com">
-    <input type="password" name="password" value="@ermfkfkfk">
-    <button>Submit!</button>
-  </form>
 
 </footer>
 
