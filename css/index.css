@@ -1,5 +1,67 @@
-/* snackbar */
+.wrap1 {
+  max-width: 350px;
+  border-radius: 20px;
+  margin: auto;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 40px;
+  padding-bottom: 0px;
+  margin-top: 100px;
+  box-shadow: 0 0 10px #3c37f1;
+}
+.AuthInp {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 5px;
+  
+  border: none;
+  border-bottom: 1px dotted #fff;
+  color: #fff;
+  border-radius: 10px;
+  
+  box-shadow: 0 0 20px#D8D8D8;
+  margin: 3px auto;
+  color: #000000;
+}
 
+.AuthInp:focus,
+.AuthInp:hover {
+  box-shadow: 0 0 20px#BEBEBE;
+  background: #fff;
+}
+
+
+.subBtn {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 0;
+  margin-top: 30px;
+  outline: none;
+  border: none;
+  background: #3c37f1;
+  opacity: 0.7;
+  border-radius: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.subBtn:hover {
+  background: #2f2c9e;
+  box-shadow: 0 10px 15px #2f2c9e;
+}
+
+.subBtn:focus {
+  outline: none;
+}
+
+.AuthLink {
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+
+/*
 .hed {
   text-align: center;
 }
@@ -165,7 +227,9 @@
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-
+body {
+  padding-top: 0px;
+}
 
 .btn {
   background-color: #3c37f1;
@@ -280,18 +344,6 @@
   line-height: 9vh;
 }
 
-.wrap1 {
-  max-width: 350px;
-  border-radius: 20px;
-  margin: auto;
-  background: #fff;
-  box-sizing: border-box;
-  padding: 40px;
-  padding-bottom: 0px;
-  margin-top: 100px;
-  box-shadow: 0 0 10px #3c37f1;
-}
-
 .wrap {
   max-width: 350px;
   border-radius: 20px;
@@ -306,55 +358,6 @@
 
 .invalid {
   border: 1px solid red !important;
-}
-
-.AuthInp {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 12px 5px;
-  /* background: */
-  border: none;
-  border-bottom: 1px dotted #fff;
-  color: #fff;
-  border-radius: 10px;
-  /* font-weight:bold; */
-  box-shadow: 0 0 20px#D8D8D8;
-  margin: 3px auto;
-  color: #000000;
-}
-
-.AuthInp:focus,
-.AuthInp:hover {
-  box-shadow: 0 0 20px#BEBEBE;
-  background: #fff;
-}
-
-.subBtn {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 10px 0;
-  margin-top: 30px;
-  outline: none;
-  border: none;
-  background: #3c37f1;
-  opacity: 0.7;
-  border-radius: 20px;
-  font-size: 20px;
-  color: #fff;
-}
-
-.subBtn:hover {
-  background: #2f2c9e;
-  box-shadow: 0 10px 15px #2f2c9e;
-}
-
-.subBtn:focus {
-  outline: none;
-}
-
-.AuthLink {
-  text-align: center;
-  margin-top: 30px;
 }
 
 #card1 {
@@ -878,4 +881,3 @@ ul.accord > li {
   height: 100px;
   width: 100px;
 }
-#

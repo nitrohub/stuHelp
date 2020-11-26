@@ -20,8 +20,8 @@
           margin-bottom: 0%;
         }
         .icon-bar{
-      background: #ffffff;
-}
+          background: #ffffff;
+        }
 
 
 
@@ -45,8 +45,8 @@
         integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
         crossorigin="anonymous"></script>
     
-<!-- <link rel="stylesheet" href="css/style.css"><!-->
- <link rel="stylesheet" href="css/index.css">
+<!-- <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="css/index.css">-->
     <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
     <body >
@@ -88,7 +88,7 @@
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
             </nav>
-            <div class="row">
+        <!-- <div class="row">
                 <div class="col-md-3"></div>
 
                 <div class="col-md-6">
@@ -99,22 +99,19 @@
                             </div>
                         </div>
                         <% } %> -->
-                            <div class="wrap1">
+                        <!--    <div class="wrap1">
                                 <form action="/login" method="POST">
                                     <div class="text-center">
                                         <h3>Login</h3>
                                     </div>
                                     <div>
-                                        <!-- <input class="AuthInp <%= validationErrors.find(e => e.param === 'emailId') ? 'invalid' : '' %>" type="text" placeholder="Email Id" name="emailId" value="<%= oldInput.email %>" /> -->
                                         <input class="AuthInp" type="text" placeholder="username" name="emailId"/>
                                     </div>
                                     <div>
-                                        <!-- <input class="AuthInp passwordA <%= validationErrors.find(e => e.param === 'password') ? 'invalid' : '' %>" type="password" placeholder="password" name="password" value="<%= oldInput.password %>" /> -->
-
+                                        
                                         <input type="password" class="AuthInp passwordA" placeholder="password" name="password"/>
                                         
-                                        <!-- <input type="hidden" name="_csrf" value="<%= csrfToken %>" /> -->
-                                    </div>
+                                        </div>
                                     <div>
                                         <button class="subBtn">SIGN IN</button>
                                     </div>
@@ -141,9 +138,9 @@
                 }
             </script> -->
 
-            <section>
+        <!--   <section>
                 <!-- <%- include('../include/footer.ejs') %> -->
-            </section>
+        <!--   </section>-->
     </body>
 
 </html>

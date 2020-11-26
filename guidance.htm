@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .about {
+            height: 1vh;
+            width: 1vw;
+            background: url("");
+        }
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <style>
+
+        .butn {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .price {
+            text-align: right;
+            margin-right: 10px;
+        }
+
+        .card {
+            font-family: 'Fira Sans', sans-serif;
+            width: 80%;
+            height: 370px;
+            /* background:rgb(235, 230, 230); */
+            margin: auto;
+            margin-bottom: 40px;
+            box-shadow: darkgrey 2px 2px 5px;
+        }
+
+        .card:hover {
+            box-shadow: rgb(100, 99, 99) 10px 10px 10px 5px;
+        }
+
+
+        .cardImg {
+            width: 100%;
+            height: 25%;
+        }
+
+        .filter {
+            margin-bottom: 20px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        a{
+        color:#FFF;
+      }
+
+        #n{
+          margin-bottom: 20px;
+        }
+
+        nav{
+          background-color:#a629cf;
+
+        }
+
+        nav a{
+          color:white;
+        }
+        .icon-bar{
+         background: #ffffff;
+        }
+
+
+
+    </style>
+    <!-- <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css"> -->
+    <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+        integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-static-top" id="n">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">StuHelp</a>
+            </div>
+    
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Home<span class="sr-only"></span></a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">Services <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Counseling</a></li>
+                            <li><a href="notes.htm">Notes</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Doubts</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Donation</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Signup</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    
+    
+    <section>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+                <div class="card"><img src="1.jpg" width="100%" height="50%" />
+                    <div class="h1">
+                        Course name
+                    </div>
+                    <div class="h4">
+                        Course duration
+                    </div>
+                    <div class="h4">
+                        Teacher name
+                    </div>
+                    <div class="h4">
+                        Fees
+                    </div>
+                    <button>Apply</button>
+
+
+
+
+
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+                <div class="card"><img src="1.jpg" width="100%" height="50%" />
+                    <div class="h1">
+                        Course name
+                    </div>
+                    <div class="h4">
+                        Course duration
+                    </div>
+                    <div class="h4">
+                        Teacher name
+                    </div>
+                    <div class="h4">
+                        Fees
+                    </div>
+                    <button>Apply</button>
+
+
+
+
+
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+                <div class="card"><img src="1.jpg" width="100%" height="50%" />
+                    <div class="h1">
+                        Course name
+                    </div>
+                    <div class="h4">
+                        Course duration
+                    </div>
+                    <div class="h4">
+                        Teacher name
+                    </div>
+                    <div class="h4">
+                        Fees
+                    </div>
+                    <button>Apply</button>
+
+
+
+
+
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+                <div class="card"><img src="1.jpg" width="100%" height="50%" />
+                    <div class="h1">
+                        Course name
+                    </div>
+                    <div class="h4">
+                        Course duration
+                    </div>
+                    <div class="h4">
+                        Teacher name
+                    </div>
+                    <div class="h4">
+                        Fees
+                    </div>
+                    <button>Apply</button>
+
+
+
+
+
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+                <div class="card"><img src="1.jpg" width="100%" height="50%" />
+                    <div class="h1">
+                        Course name
+                    </div>
+                    <div class="h4">
+                        Course duration
+                    </div>
+                    <div class="h4">
+                        Teacher name
+                    </div>
+                    <div class="h4">
+                        Fees
+                    </div>
+                    <button>Apply</button>
+
+
+
+
+
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+                <div class="card"><img src="1.jpg" width="100%" height="50%" />
+                    <div class="h1">
+                        Course name
+                    </div>
+                    <div class="h4">
+                        Course duration
+                    </div>
+                    <div class="h4">
+                        Teacher name
+                    </div>
+                    <div class="h4">
+                        Fees
+                    </div>
+                    <button>Apply</button>
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section>
+
+    </section>
+
+    </section>
+
+</body>
+
+</html>
