@@ -18,14 +18,23 @@
   "homepage": "https://github.com/nitrohub/stuHelp#readme",
   "dependencies": {
     "bcrypt": "^5.0.0",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "flash": "^1.1.0",
     "http": "0.0.1-security",
     "jsonwebtoken": "^8.5.1",
     "method-override": "^3.0.0",
     "mongoose": "^5.10.15",
-    "razorpay": "^2.0.6"
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.0.1",
+    "razorpay": "^2.0.6",
+    "s": "^1.0.0",
+    "session": "^0.1.0"
   }
 }

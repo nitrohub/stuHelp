@@ -1,55 +1,59 @@
-const mongoose = require("mongoose");
-const bcrypt = require("bcrypt");
+var mongoose = require("mongoose");
+var bcrypt = require("bcryptjs");
 
-
-const userSchema = new mongoose.Schema({
-    name : {
-      type: String,
-      required:true,
-      unique: true  
+var userSchema = mongoose.Schema({
+    name: {
+        type: String
     },
-    email:{
-        type : String,
-        required:true,
-        unique: true
+    email : {
+        type: String
     },
     password : {
-        type: String,
-        required:true,
-        unique:true
-    },
-    isAdmin: {
-        type: Boolean
-    },
-    notesPurchased: {
-        type: Array
+        type: String
     }
-})
+    // isAdmin  : Boolean,
+    // notesPurchased : Array
+});
 
-userSchema.pre("save",async function(next){   //This is attached to the document
-    try{
-        if(!this.isModified("password")){  //If the password is not entered then dont hash it else hash it!
-            return next();
-        }
+var user = module.exports = mongoose.model("user",userSchema);
 
-        let hashedPassword = await bcrypt.hash(this.password, 10);
-        this.password = hashedPassword;
-        return next();
-    }catch(err){
-        return next(err);
-    }
-})
-
-userSchema.methods.comparePassword = async function(candidatePassword, next){   //This method is attached to the document when the user wants to compare the elements of the database and the entered password in the form
-    try{
-        let isMatch = await bcrypt.compare(candidatePassword, this.password);
-        return isMatch;
-    }catch(err){
-        return next(err);
-    }
+module.exports.createUser = function(newUser,callback){
+    bcrypt.genSalt(10,function(err,salt){
+        bcrypt.hash(newUser.password, salt, function(err,hash){
+            newUser.password= hash;
+            newUser.save(callback);
+        })
+    })
 }
-const User = mongoose.model("User",userSchema);
 
+module.exports.getUserByUsername = function(username,callback){
+    var query = {email:username};
+    user.findOne(query,callback);
+}
 
+module.exports.comparePassword = function(candidatePassword,hash,callback){
+    bcrypt.compare(candidatePassword,hash,function(err,isMatch){
+        if(err) throw err;
+        callback(null,isMatch);
+    })
+}
 
-module.exports = User;
+module.exports.getUserById = function(id,callback){
+    user.findById(id,callback);
+}
+
+// module.exports.getUserByUsername = function(username,callback){
+//     var query = {username:username};
+//     user.findOne(query,callback);
+// }
+
+module.exports.comparePassword = function(candidatePassword,hash,callback){
+    bcrypt.compare(candidatePassword,hash, function(err, isMatch) {
+        if(err) throw err;
+        callback(null,isMatch);
+    });
+}
+
+module.exports.getUserById = function(id,callback){
+    user.findById(id,callback);
+}
