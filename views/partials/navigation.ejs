@@ -12,7 +12,7 @@
   
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Home<span class="sr-only"></span></a></li>
+          <li><a href="#">About<span class="sr-only"></span></a></li>
           <li><a href="#">Courses</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
@@ -23,10 +23,36 @@
               <li><a href="#">Doubts</a></li>
             </ul>
           </li>
-          <li><a href="/donate">Donation</a></li>
-          <li><a href="/login">Login</a></li>
-          <li><a href="/signup">Signup</a></li>
+          <li><a href="#">ContactUs</a></li>
         </ul>
       </div>
     </div>
   </nav>
+
+  <script>
+    const $dropdown = $(".dropdown");
+    const $dropdownToggle = $(".dropdown-toggle");
+    const $dropdownMenu = $(".dropdown-menu");
+    const showClass = "show";
+
+$(window).on("load resize", function() {
+  if (this.matchMedia("(min-width: 768px)").matches) {
+    $dropdown.hover(
+      function() {
+        const $this = $(this);
+        $this.addClass(showClass);
+        $this.find($dropdownToggle).attr("aria-expanded", "true");
+        $this.find($dropdownMenu).addClass(showClass);
+      },
+      function() {
+        const $this = $(this);
+        $this.removeClass(showClass);
+        $this.find($dropdownToggle).attr("aria-expanded", "false");
+        $this.find($dropdownMenu).removeClass(showClass);
+      }
+    );
+  } else {
+    $dropdown.off("mouseenter mouseleave");
+  }
+});
+  </script>
